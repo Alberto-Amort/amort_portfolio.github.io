@@ -9,7 +9,12 @@ const config = {
             fallback: undefined,
             precompress: false,
             strict: true
-        })
+        }),
+
+        paths: {
+            base: 
+            process.argv.includes('dev') ? '' : "/amort_portfolio.github.io"
+        }
 	}
 };
 export default config;
